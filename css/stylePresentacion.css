@@ -1,0 +1,314 @@
+html{
+	font-size: 62.5%; /**reset para rems -62.5% =10px de 16... esta cuenta es para hacer que un rem valga 10px**/
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.6rem;
+}
+
+/** globales**/
+
+/*font-family: 'Lora', serif;
+font-family: 'PT Sans', sans-serif;*/
+/*#6599ff, #66cbff, #1842cb*/
+
+.contenedor{
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4{
+	font-family: 'Lora', serif;
+}
+
+h1{
+	font-size: 3.8rem;
+}
+h2{
+	font-size: 4rem;
+	line-height: 1;
+}
+h3{
+	font-size: 3.2rem;
+}
+h4{
+	font-size: 2.8rem;
+}
+
+
+/**utilidades**/
+.center{
+	text-align: center;
+}
+.no-margin{
+	margin:0;
+}
+
+/*** Trianglify ***/
+canvas{
+	width: 100%;
+	height: 100vh;
+	}
+/** Header **/
+.fondo{
+	position: relative;
+}
+.titulo{
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	right: 25%;
+	color: #FD7E0E;
+}
+@media only screen and (min-width: 768px) {
+	.titulo{
+	top: 35%;
+	left: 27%;
+	right: 27%;
+	}
+	h1{
+	font-size: 6.8rem;
+}
+}
+@media only screen and (min-width: 992px) {
+	.titulo{
+	top: 35%;
+	left: 37%;
+	right: 20%;
+	}
+	h1{
+	font-size: 6.8rem;
+}
+}
+@media only screen and (min-width: 1024px) {
+	.titulo{
+	top: 37%;
+	left: 32%;
+	right: 20%;
+	}
+	h1{
+	font-size: 6.8rem;
+}
+}
+@media only screen and (min-width: 1440px) {
+	.titulo{
+	top: 36%;
+	left: 32%;
+	right: 20%;
+	}
+	h1{
+	font-size: 9.4rem;
+}
+}
+@media only screen and (min-width: 2560px) {
+	.titulo{
+	top: 35%;
+	left: 28%;
+	right: 20%;
+	}
+	h1{
+	font-size: 20rem;
+}
+}
+/*Lettering*/
+h1.titulo span{
+	text-shadow: 1px 3px 0 #FE9103, 1px 5px 5px ;
+	color: #FD7E0E;
+	display: inline-block;
+}
+span.char2, span.char4, span.char8{
+	-webkit-transform: rotate(-25deg);
+}
+
+/** Article **/
+/*.info{
+	width: 96.5vw;
+	height: 100vh;
+	background-color: #6599ff;
+
+}
+@media only screen and (min-width: 768px) {
+	.info{
+	width: 98.7vw;
+	height: 100vh;
+	background-color: #6599ff;
+	}
+}*/
+
+/** Galeria con proyectos **/
+.tituloMain{
+	color: #FD7E0E;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /*background-color: #DDDBDB;*/
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 28px;
+  vertical-align: middle;
+  width: 100%;
+  filter: gray;
+
+}
+img.enfoque{
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;  
+}
+img.enfoque:hover{
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 49%;
+    flex: 49%;
+    max-width: 49%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 99%;
+    flex: 99%;
+    max-width: 99%;
+  }
+}
+/*Imagen columna 3*/
+@media only screen and (min-width:768px) {
+  .maxs {
+    max-height: 680px;
+  }
+}
+@media only screen and (min-width:992px ) {
+  .maxs {
+    max-height: 780px;
+  }
+}
+@media only screen and (min-width:1024px ) {
+  .maxs {
+    max-height: 710px;
+  }
+}
+@media only screen and (min-width:1250px ) {
+  .maxs {
+    max-height: 850px;
+  }
+}
+@media only screen and (min-width:1440px) {
+  .maxs {
+    max-height: 1000px;
+  }
+}
+@media only screen and (min-width:2560px) {
+  .maxs {
+    max-height: 1800px;
+  }
+}
+
+/**Fotomontaje**/
+.montaje{
+	width: 98%;
+}
+.imgFotomontaje{
+	width: 98%;
+	padding: 0 1px;
+}
+
+/** Pie de pagina **/
+.campoFooter{
+	width: 98.5vw;
+	height: auto;
+	background: rgb(235,137,62);
+	background: -webkit-linear-gradient(173deg, rgba(235,137,62,1) 17%, rgba(240,201,173,1) 50%, rgba(251,115,11,0.9864320728291317) 82%);
+	background: -o-linear-gradient(173deg, rgba(235,137,62,1) 17%, rgba(240,201,173,1) 50%, rgba(251,115,11,0.9864320728291317) 82%);
+	background: linear-gradient(263deg, rgba(235,137,62,1) 17%, rgba(240,201,173,1) 50%, rgba(251,115,11,0.9864320728291317) 82%);
+}
+.iconos{
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 50rem;
+	font-size: 5rem;
+	color: #1842cb;
+}
+.footerH2{
+	font-size: 10rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+	color: #1842cb;
+}
+.footerH3{
+	font-size: 1.8rem;
+	border-top: 1px solid black;
+	padding-top: 1rem;
+	padding-bottom: 0.8rem;
+	margin-bottom: 0;
+	color: #1842cb;
+}
+@media only screen and (min-width: 320px) {
+	.footerH2{
+	font-size: 7rem;
+}
+	.iconos{
+	margin: 3rem 3rem;
+	font-size: 3rem;
+	}	
+}
+@media only screen and (min-width: 768px) {
+	.iconos{
+	margin: 3rem 30rem;
+	font-size: 5rem;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	.iconos{
+	margin: 3rem 40rem;
+	font-size: 5rem;
+	}
+	.footerH3{
+	font-size: 2.8rem;
+	padding-top: 1.5rem;
+}
+}
+@media only screen and (min-width: 2560px) {
+	.iconos{
+	margin: 10rem 75rem;
+	font-size: 9rem;
+	}
+	.footerH2{
+	font-size: 18rem;
+}
+	.footerH3{
+	font-size: 4.8rem;
+	padding-top: 2.5rem;
+}
+}
+.iconos p a{
+	text-decoration: none;
+	color: #1842cb;
+}
+.raton{
+	cursor: pointer;
+}
+
+

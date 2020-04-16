@@ -10,6 +10,17 @@ body{
 	font-family: 'PT Sans', sans-serif;
 	font-size: 1.6rem;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 /** globales**/
 
@@ -125,20 +136,155 @@ span.char2, span.char4, span.char8{
 	-webkit-transform: rotate(-25deg);
 }
 
-/** Article **/
-/*.info{
-	width: 96.5vw;
-	height: 100vh;
-	background-color: #6599ff;
-
+/** ARTICLE **/
+.info{
+	margin-top: 2rem;
 }
-@media only screen and (min-width: 768px) {
-	.info{
-	width: 98.7vw;
-	height: 100vh;
-	background-color: #6599ff;
+.img-article{
+	margin-left: 4rem;
+	width: 99%;
+	float: left;
+	margin-top: 3rem;
+	height: 40rem;
+}
+.img-article img{
+	width: auto;
+	height: 39rem;
+	margin-left: 7rem;
+}
+@media only screen and (min-width: 1024px) {
+	.img-article{
+		width: 40%	
 	}
-}*/
+	.img-article img{
+		width: auto;
+	}
+}
+@media only screen and (min-width: 2560px) {
+	.img-article{
+		height: 60rem;
+	}
+	.img-article img{
+		height: 59rem;
+		margin-left: 30%;
+	}
+}
+.info-autor{
+	width: 95%;
+	height: 40rem;
+	float: right;
+	margin-right: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+	.info-autor{
+		width: 45%;
+	}	
+}
+/**/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  height: 34.2rem;
+}
+@media only screen and (min-width: 2560px) {
+	.slideshow-container{
+		height: 54.2rem;
+		margin-right: 5rem;
+	}
+	.dot-container{
+		margin-right: 5rem;
+	}
+}
+/* Slides */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+.mySlides h2{
+	padding-top: 0.5rem;
+}
+.mySlides p{
+	padding: 0 3.3rem 1rem 3.3rem;
+	text-align: left;
+	line-height: 1.6;
+}
+@media only screen and (min-width: 1440px) {
+	.mySlides p{
+		font-size: 1.8rem;
+	}	
+}
+@media only screen and (min-width: 2560px) {
+	.mySlides p{
+		font-size: 3.2rem;
+	}	
+}
+.mySlides span{
+	display: block;
+	text-align: left;
+	margin-left: 6rem;
+	line-height: 1.4;
+}
+.mySlides i{
+	color: #FD7E0E;
+	margin-right: 0.5rem;
+}
+@media only screen and (min-width: 2560px) {
+	.mySlides span{
+		font-size: 3rem;
+	}	
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #6599ff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FD7E0E;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #6599ff; /*#ddd;*/
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f1f1f1f1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #FD7E0E;
+}
 
 /** Galeria con proyectos **/
 .tituloMain{
